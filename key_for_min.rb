@@ -4,9 +4,13 @@
 def key_for_min_value(name_hash)
   initial = {key: 0}
   name_hash.each do |k, n|
-    initial = {key: n}
+    if initial[:key] < n
+      initial = {key: n}
+    end
   end
-  puts initial
+  name_hash.collect do |k, n|
+    if initial[:key] < n
+      initial = {key: n}
 end
 
 ikea = {:chair => 25, :table => 85, :mattress => 450}
