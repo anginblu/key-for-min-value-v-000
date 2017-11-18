@@ -9,8 +9,9 @@ def key_for_min_value(name_hash)
     end
   end
   name_hash.collect do |k, n|
-    if initial[:key] < n
-      initial = {key: n}
+    if initial[:key] == n
+      k
+    end
 end
 
 ikea = {:chair => 25, :table => 85, :mattress => 450}
