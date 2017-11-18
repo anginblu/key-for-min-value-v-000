@@ -7,7 +7,7 @@ def key_for_min_value(name_hash)
   end
 
   name_hash.collect do |k, n|
-    until hash_new[:key1] < n
+    until hash_new[:key1] >= n
       {k: n} = hash_new
     end
     puts hash
