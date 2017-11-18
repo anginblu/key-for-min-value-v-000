@@ -13,6 +13,7 @@ def key_for_min_value(name_hash)
     name_hash.collect do |k, n|
       while hash_new[:key] > n
         hash_new = {key: n}
+        key = k
       end
     end
     name_hash.each do |k, n|
