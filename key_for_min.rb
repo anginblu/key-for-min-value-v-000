@@ -4,7 +4,8 @@
 def key_for_min_value(name_hash)
   hash_new = { }
   name_hash.each do |k, n|
-    hash_new = {key1: n}
+    unless hash_new == name_hash
+      hash_new = {key1: n}
   end
   name_hash.each do |k, n|
     if hash_new[:key1] > n
