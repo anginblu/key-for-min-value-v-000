@@ -10,7 +10,7 @@ def key_for_min_value(name_hash)
     while hash[:key] < n
       hash = {key: n}
     end
-    puts initial
+    puts hash
   end
 end
 
