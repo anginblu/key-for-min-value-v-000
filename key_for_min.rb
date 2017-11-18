@@ -8,15 +8,15 @@ def key_for_min_value(name_hash)
     nil
   else
     name_hash.each do |k, n|
-      hash_new = {key1: n}
+      hash_new = {key: n}
     end
     name_hash.each do |k, n|
-      while hash_new[:key1] > n
-        hash_new = {key1: n}
+      while hash_new[:key] > n
+        hash_new = {key: n}
       end
     end
     name_hash.each do |k, n|
-      if hash_new[:key1] == n
+      if hash_new[:key] == n
         key = k
       end
     end
