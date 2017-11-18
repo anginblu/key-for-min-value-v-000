@@ -4,7 +4,7 @@
 def key_for_min_value(name_hash)
   initial = {key: 0}
   name_hash.each do |k, n|
-    initial = {k: n}
+    initial = {:k => n}
   end
   puts initial
 end
