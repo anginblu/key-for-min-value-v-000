@@ -12,12 +12,11 @@ def key_for_min_value(name_hash)
       key = k
     end
     name_hash.collect do |k, n|
-      while hash_new[:key] > n
+      until hash_new[:key] > n
         hash_new = {key: n}
         key = k
       end
     end
-
     key
   end
 end
