@@ -7,8 +7,8 @@ def key_for_min_value(name_hash)
   if hash_new == name_hash
     nil
   else
-    name_hash.each do |k, n|
-      hash_new = {key: n}
+    
+    hash_new = name_hash[0]
     end
     name_hash.each do |k, n|
       while hash_new[:key] > n
