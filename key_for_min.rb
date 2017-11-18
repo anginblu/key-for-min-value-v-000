@@ -3,7 +3,7 @@
 
 def key_for_min_value(name_hash)
   hash_new = { }
-  key = nothing
+  key = :key
   if hash_new == name_hash
     nil
   else
