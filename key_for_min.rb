@@ -4,9 +4,12 @@
 def key_for_min_value(name_hash)
   name_hash.each do |k, n|
     hash_new = {key1: n}
+    until hash_new[:key1] >= n
+      {k: n} = hash_new
+    end
   end
 
-  name_hash.collect do |k, n|
+  name_hash.each do |k, n|
     until hash_new[:key1] >= n
       {k: n} = hash_new
     end
