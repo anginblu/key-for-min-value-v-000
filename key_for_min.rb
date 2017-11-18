@@ -10,7 +10,7 @@ def key_for_min_value(name_hash)
   end
   name_hash.collect do |k, n|
     if initial[:key] == n
-      k
+      puts k
     end
   end
 end
