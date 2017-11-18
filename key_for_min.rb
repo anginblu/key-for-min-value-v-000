@@ -5,11 +5,12 @@ def key_for_min_value(name_hash)
   name_hash.each do |k, n|
     intial = {key: n}
   end
-  
+
   name_hash.collect do |k, n|
-    while initial[:key] == n
-      puts k
+    while initial[:key] < n
+      intial = {key: n}
     end
+    puts initial
   end
 end
 
